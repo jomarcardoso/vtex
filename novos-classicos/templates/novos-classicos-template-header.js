@@ -1,5 +1,5 @@
 <template id="novos-classicos-template-header">
-  <header>
+  // <header>
     <nav class="welcome-bar hidden-xs">
       <vtex.cmc:welcomeMessage class="welcome" />
       <ul class="help-menu text-right list-inline">
@@ -11,5 +11,5 @@
     <section>
 
     </section>
-  </header>
+  // </header>
 </template>

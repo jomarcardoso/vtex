@@ -48,12 +48,30 @@
   <link rel="stylesheet" href="../css/novos-classicos.css">
 
   <!-- templates -->
-  <script src="../templates/novos-classicos-template-header.js" charset="utf-8" type="text/template"></script>
+
 
 </head>
 <body id="novos-classicos-home-page">
 
-  <vtex:template id="novos-classicos-template-header" />
+  <!-- <script src="../templates/novos-classicos-template-header.js" charset="utf-8" type="text/template"></script> -->
+
+  <template id="novos-classicos-template-header">
+    <!-- // <header> -->
+      <nav class="welcome-bar hidden-xs">
+        <vtex.cmc:welcomeMessage class="welcome" />
+        <ul class="help-menu text-right list-inline">
+            <li class="link-sobre"><a href="/institucional/quem-somos">Sobre Nós</a></li>
+            <li class="link-help"><a href="/institucional/ajuda">Ajuda?</a></li>
+            <li class="televendas-topo"><span>Televendas: <strong><vtex.cmc:telefone /></strong></span></li>
+        </ul>
+      </nav>
+      <section>
+
+      </section>
+    <!-- // </header> -->
+  </template>
+
+  <!-- <vtex:template id="novos-classicos-template-header" /> -->
 
 </body>
 <!-- <vtex:template id="commonScripts" /> -->
@@ -81,5 +99,7 @@
 
 
   <!-- backbone-template -->
+  <script src="../js/vendors/backbone/underscore-min.js" charset="utf-8" type="text/javascript"></script>
+  <script src="../js/vendors/backbone/backbone-min.js" charset="utf-8" type="text/javascript"></script>
   <script src="../js/novos-classicos.js" charset="utf-8" type="text/javascript"></script>
 </html>
