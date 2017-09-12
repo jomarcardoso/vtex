@@ -1,0 +1,13 @@
+@import variables
+@import set
+@import header/header
+body
+
+
+  > * > *
+    display: grid
+    grid-template-areas: ". content ."
+    grid-template-columns: 1fr minmax(1px, 1250px) 1fr
+
+    .content
+      grid-area: content

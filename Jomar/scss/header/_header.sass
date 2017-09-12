@@ -1,0 +1,49 @@
+header
+  nav
+    background: var(--color-medium-gray)
+    .content
+      display: flex
+      justify-content: space-between
+      align-items: center
+      p
+        margin-top: 4px
+        margin-bottom: 4px
+      ul
+        li
+          display: inline-block
+          margin-left: 12px
+  .header
+    background: var(--color-theme-1)
+    padding: 20px
+    a
+      text-decoration: none
+    .content
+      display: grid
+      grid-template-columns: auto 1fr auto auto
+      align-items: center
+      grid-gap: 30px
+      .brand
+        img
+          display: block
+          width: 184px
+          height: 47px
+          background: var(--color-medium-gray)
+      .search
+        fieldset
+          margin: auto
+          width: 100%
+          legend, label
+            display: none
+          input, select
+            height: 47px
+            border: 2px solid white
+          input[type=text]
+            width: calc(100% - 128px - 58px)
+          select
+            border-radius: 4px 0 0 4px
+          input:last-child
+            border-radius: 0 4px 4px 0
+      .cart
+        .fa-shopping-cart
+          font-size: 47px
+          color: white
