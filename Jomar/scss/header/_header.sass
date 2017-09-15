@@ -1,6 +1,11 @@
 header
   nav
-    background: var(--color-medium-gray)
+    background: black
+    color: white
+    a, p
+      color: var(--color-light-gray)
+    span, strong
+      color: white
     .content
       display: flex
       justify-content: space-between
@@ -14,20 +19,33 @@ header
           margin-left: 12px
   .header
     background: var(--color-theme-1)
-    padding: 20px
+    padding: 10px
     a
       text-decoration: none
     .content
       display: grid
       grid-template-columns: auto 1fr auto auto
       align-items: center
-      grid-gap: 30px
+      grid-gap: 14px
       .brand
-        img
-          display: block
-          width: 184px
-          height: 47px
-          background: var(--color-medium-gray)
+        position: relative
+        h1
+          font-size: 27px
+          margin: 0
+          a
+            svg
+              max-width: 8em
+              height: 2.1125em
+              padding: 0 0 1em
+        div
+          position: absolute
+          bottom: 10px
+          opacity: 1
+          right: 2.1em
+          a
+            color: #fff
+            font-size: .8125em
+            text-decoration: underline
       .search
         fieldset
           margin: auto
@@ -39,11 +57,88 @@ header
             border: 2px solid white
           input[type=text]
             width: calc(100% - 128px - 58px)
+          input[type=button]
+            background: var(--color-theme-1)
+            color: white
           select
             border-radius: 4px 0 0 4px
           input:last-child
             border-radius: 0 4px 4px 0
+      .user
+        color: white
       .cart
-        .fa-shopping-cart
-          font-size: 47px
-          color: white
+        position: relative
+        .cart-button
+          position: relative
+          .fa-shopping-cart
+            font-size: 47px
+            color: white
+          .mini-cart-qty-admake
+            background: white
+            border-radius: 50%
+            text-align: center
+            min-width: 26px
+            min-height: 26px
+            display: flex
+            justify-content: center
+            align-items: center
+            position: absolute
+            right: -12px
+            border: 1px solid var(--color-theme-1)
+            color: var(--color-theme-1)
+            top: -30px
+            font-weight: bold
+        #mini-cart-admake
+          z-index: 100
+          position: absolute
+          right: 0
+          margin-top: 14px
+          opacity: 0
+          transition: all .3s ease
+          max-width: 23.125em
+          min-width: 18.125em
+          color: var(--color-black-light)
+          .mini-cart-header, .mini-cart-itens
+            background: white
+          .mini-cart-header, .mini-cart-footer
+            padding: .875em
+          .mini-cart-itens, .mini-cart-footer
+            border-top: 1px solid var(--color-medium-gray)
+          .mini-cart-header
+            font-weight: bold
+          .mini-cart-itens
+            ul
+              margin: 0 .875em .625em
+              li
+                a
+                  display: block
+                  overflow: hidden
+                  padding: .875em 0 .875em 3.5em
+                  min-height: 2.4em
+          .mini-cart-footer
+            display: flow-root
+            background: var(--color-light-gray)
+            text-align: right
+            .mini-cart-totais
+              #mini-cart-admake-total
+            .mini-cart-botao
+              padding: .5em 1em
+              font-size: 1em
+              background: #40cd28
+              color: white
+              font-weight: bold
+              border-radius: 5px
+              float: right
+        #mini-cart-admake:before
+          width: 0
+          height: 0
+          content: ""
+          border-left: 12px solid transparent
+          border-right: 12px solid transparent
+          border-bottom: 12px solid #fff
+          top: -12px
+          margin-right: -12px
+          position: absolute
+          right: 20px
+      .cart:hover #mini-cart-admake
+        opacity: 1
