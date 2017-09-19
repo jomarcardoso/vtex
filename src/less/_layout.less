@@ -1,8 +1,11 @@
 .container {
-  display: grid;
-  grid-template-columns: 1fr minmax(var(--min-width-body-content), var(--max-width-body-content)) 1fr;
+  // display: grid;
+  // grid-template-columns: 1fr minmax(var(--min-width-body-content), var(--max-width-body-content)) 1fr;
+  // grid-template-areas: ". content .";
 }
 
 .content {
-  grid-area: content;
+  // grid-area: content;
+  max-width: var(--max-width-body-content);
+  margin: auto;
 }
