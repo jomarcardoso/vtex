@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,CACA;EACE,UAAU,EAAE,UAAU;;AAGxB,IACA;EACE,MAAM,EAAE,CAAC",
-"sources": ["../scss/_set.scss"],
-"names": [],
-"file": "novos-classicos.css"
-}
