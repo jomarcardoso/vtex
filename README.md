@@ -1,3 +1,17 @@
+#VTEX
+
+Recriando site da Arezzo na plataforma VTEX.
+
+https://www.arezzo.com.br/
+
+##Pastas
+ * templates
+ * templates/subtemplates
+ * templates/gerador-templates - seria uma forma de criar os templates por fora, (bom fazer copia)
+ * less
+ * js
+ * arquivos - aqui arquivos de terceiros
+
 # VTEX Speed
 
 VTEX Store development tools - reverse proxy, compilation, minification, optimization and more!
