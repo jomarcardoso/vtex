@@ -35,9 +35,6 @@
     <title>NOME DA PÁGINA</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
 
-
-    <link rel="stylesheet" href="../../../build/main.css">
-
     <!-- commonStyles -->
     <!-- <vtex:template id="commonStyles" /> -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
@@ -46,14 +43,85 @@
       <link href="../../arquivos/css/commonStyles/owl.carousel.css" rel="stylesheet" type="text/css" />
       <!-- <link href="../../arquivos/css/commonStyles/style.css" rel="stylesheet" type="text/css" /> -->
 
+    <link rel="stylesheet" href="../../../build/main.css">
+
   </head>
   <body>
     <header>
       <div id="welcome-bar">
-        <div class="content">BEM VINDO</div>
+        <div class="content"></div>
       </div>
       <div id="header">
-        <div class="content">HEADER</div>
+        <div class="content">
+          <section class="brand">
+            <h1>
+              <a href="">
+                <vtex:contentPlaceHolder id="logo-277x51" />
+                <!-- remover daqui -->
+                  <img src="../../arquivos/img/ARZ-Logotipo-277x51.png" alt="Arezzo">
+                <!-- remover até aqui -->
+              </a>
+            </h1>
+          </section>
+          <section class="search">
+            <vtex.cmc:fullTextSearchBox/>
+            <!-- remover daqui -->
+              <fieldset class="busca">
+                <legend>Buscar no site</legend>
+                <label>Buscar</label>
+                <select id="ftDept2def2f3ccd494f47a2d9357af336f8b9">
+                  <option value="">Todo o site</option>
+                  <option value="18">Casa e Jardim</option>
+                  <option value="8">Eletrônicos</option>
+                  <option value="4">Moda</option>
+                  <option value="9">Móveis</option>
+                  <option value="22">Informática</option>
+                </select>
+                <input type="hidden" id="ftIdx2def2f3ccd494f47a2d9357af336f8b9" value="">
+                <input id="ftBox2def2f3ccd494f47a2d9357af336f8b9" class="fulltext-search-box ui-autocomplete-input" type="text" size="20" accesskey="b" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true"><input id="ftBtn2def2f3ccd494f47a2d9357af336f8b9" type="button" value="Buscar" class="btn-buscar">
+              </fieldset>
+            <!-- remover até aqui -->
+          </section>
+          <section class="user">
+            <ul>
+              <li><span>TELEVENDAS <vtex.cmc:telefone /></span></li>
+              <li><a href="">ATENDIMENTO</a></li>
+              <li><a href="">ENTRAR</a></li>
+            </ul>
+          </section>
+          <section class="bag">
+            <i>
+              BAG
+            </i>
+          </section>
+          <nav class="nav-bar">
+            <vtex.cmc:departmentLinks/>
+            <!-- remover daqui -->
+              <ul class="menu">
+                <li class="menu-casa-e-jardim">
+                  <a href="http://cwi.vtexlocal.com.br/casa-e-jardim">Casa e Jardim</a>
+                </li>
+                <li class="menu-eletronicos">
+                  <a href="http://cwi.vtexlocal.com.br/eletronicos">Eletrônicos</a>
+                </li>
+                <li class="menu-moda">
+                  <a href="http://cwi.vtexlocal.com.br/moda">Moda</a>
+                </li>
+                <li class="menu-moveis">
+                  <a href="http://cwi.vtexlocal.com.br/moveis">Móveis</a>
+                </li>
+                <li class="menu-informatica">
+                  <a href="http://cwi.vtexlocal.com.br/informatica">Informática</a>
+                </li>
+                <li class="franqueado">
+                  <a href="">SEJA UM FRANQUEADO</a>
+                </li>
+              </ul>
+            <!-- remover até aqui -->
+          </nav>
+          <div class="burger">
+          </div>
+        </div>
       </div>
     </header>
   </body>
@@ -75,5 +143,7 @@
   <script src="../../arquivos/js/commonScripts/advanced-filter.js.download"></script>
   <script src="../../arquivos/js/commonScripts/admake-mini-cart.js.download"></script>
   <script src="../../arquivos/js/commonScripts/default.js.download"></script>
+
+  <script src="../../../build/main.min.js" charset="utf-8"></script>
 
 </html>

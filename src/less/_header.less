@@ -1,0 +1,132 @@
+header {
+  #header .content {
+    display: grid;
+
+    .brand {
+      grid-area: brand;
+
+      h1 {
+        padding: 26px 0 14px;
+      }
+    }
+
+    .search {
+      grid-area: search;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+
+      fieldset {
+        border-bottom: 1px solid #ddd;
+
+        legend, label, select {
+          display: none;
+        }
+        input::placeholder {
+          color: black;
+        }
+
+      }
+    }
+
+    .user {
+      grid-area: user;
+      ul {
+        li {
+          font-size: 14px;
+          > a {
+            padding: 15px 16px 16px;
+          }
+          > span {
+            padding: 15px 16px 9px 0;
+          }
+        }
+      }
+    }
+
+    .nav-bar {
+      grid-area: navbar;
+    }
+
+    .burger {
+      grid-area: burger;
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAgCAYAAAAIXrg4AAAAWUlEQVRIS+2UwQ0AIAgDYf+hJS7gPRpIJOVdBI5KRnNk8/vhAkh4BNHBNgTBncAFngBHliyskFN3TGCbok3bEbHXBMUOmwoAONXnGhmNIMIuFIH/AdL7H1EBY78MFYmGzlEAAAAASUVORK5CYII=);
+      width: 24px;
+      height: 32px;
+    }
+
+    .bag {
+      grid-area: bag;
+    }
+  }
+}
+
+@media screen and (min-width: 741px) {
+  header {
+    #header .content {
+      grid-template-areas:
+        "brand . search search"
+        "brand . user bag"
+        "navbar navbar navbar navbar";
+      grid-template-columns: auto 1fr auto auto;
+
+      .burger {
+        display: none;
+      }
+      .nav-bar ul, .user ul {
+        display: flex;
+        text-transform: uppercase;
+      }
+      .nav-bar ul {
+        position: relative;
+        font-weight: bold;
+        flex-flow: row wrap;
+        // justify-content: flex-end;
+        align-content: flex-end;
+        border-bottom: 1px solid black;
+        border-top: 1px solid #ddd;
+        li {
+          margin: 0 13px;
+
+          a {
+            height: 22px;
+            line-height: 1.1em;
+            padding: 18px 0 8px;
+            display: block;
+            border-bottom: 4px solid transparent;
+          }
+          a:hover {
+            border-bottom: 4px solid black;
+          }
+        }
+        li:first-child {
+          margin: 0 13px 0 0;
+        }
+      }
+      .nav-bar ul li.franqueado {
+        font-weight: normal;
+        // align-self: flex-end;
+        flex: 1;
+
+        a {
+          font-size: 13px;
+          float: right;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 740px) {
+  header {
+    #header .content {
+      grid-template-areas:
+        "burger . brand . bag"
+        "search search search search search"
+        "navbar navbar navbar navbar navbar"
+        "user user user user user";
+      grid-template-columns: auto 1fr auto 1fr auto;
+    }
+  }
+}

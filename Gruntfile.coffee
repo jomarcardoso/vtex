@@ -48,6 +48,7 @@ module.exports = (grunt) ->
           src: ['**/*.coffee']
           dest: "build/"
           ext: '.js'
+          # 'build/main.coffee': ['src/js/*.js']
         ]
 
     less:
@@ -73,15 +74,16 @@ module.exports = (grunt) ->
         mangle: false
       main:
         files: [{
-          expand: true
-          cwd: 'build/'
-          src: ['*.js', '!*.min.js']
-          dest: 'build/'
-          ext: '.min.js'
+          # expand: true
+          # cwd: 'build/'
+          # src: ['*.js', '!*.min.js']
+          # dest: 'build/'
+          # ext: '.min.js'
+          'build/main.min.js': ['build/js/*.js']
         }]
 
     sprite:
-      all: 
+      all:
         src: 'src/sprite/*.png'
         dest: 'build/spritesheet.png'
         destCss: 'build/sprite.css'
@@ -117,7 +119,7 @@ module.exports = (grunt) ->
       options:
         livereload: true
       coffee:
-        files: ['src/**/*.coffee']
+        files: ['src/js/*.coffee']
         tasks: ['coffee']
       less:
         options:
@@ -132,12 +134,18 @@ module.exports = (grunt) ->
       main:
         files: ['src/**/*.html', 'src/**/*.js', 'src/**/*.css']
         tasks: ['copy']
+      uglify:
+        files: ['build/js/*.js']
+        tasks: ['uglify']
+      # cssmin:
+      #   files: ['*.css']
+      #   tasks: ['cssmin']
       grunt:
         files: ['Gruntfile.coffee']
 
   tasks =
     # Building block tasks
-    build: ['clean', 'copy:main', 'sprite', 'coffee', 'less', 'imagemin']
+    build: ['clean', 'copy:main', 'sprite', 'coffee', 'less', 'imagemin', 'min']
     min: ['uglify', 'cssmin'] # minifies files
     # Deploy tasks
     dist: ['build', 'min'] # Dist - minifies files
