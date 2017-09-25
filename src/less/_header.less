@@ -1,46 +1,47 @@
 header {
   #header .content {
     display: grid;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 
     .brand {
       grid-area: brand;
-
-      h1 {
-        padding: 26px 0 14px;
-      }
     }
 
     .search {
       grid-area: search;
-      display: flex;
-      justify-content: flex-end;
-      align-items: flex-end;
+
+      legend, label, select {
+        display: none;
+      }
 
       fieldset {
-        border-bottom: 1px solid #ddd;
-
-        legend, label, select {
-          display: none;
+        position: relative;
+        input[type="button"] {
+          text-transform: uppercase;
+          position: absolute;
+          right: 10px;
+          top: 0;
+          z-index: 2;
+          bottom: 0;
         }
-        input::placeholder {
-          color: black;
-        }
-
       }
     }
 
     .user {
+      display: block;
       grid-area: user;
-      ul {
-        li {
-          font-size: 14px;
-          > a {
-            padding: 15px 16px 16px;
-          }
-          > span {
-            padding: 15px 16px 9px 0;
-          }
-        }
+      .televendas {
+        grid-area: televendas;
+      }
+      .atendimento {
+        grid-area: atendimento;
+      }
+      .entrar {
+        grid-area: entrar;
       }
     }
 
@@ -57,6 +58,41 @@ header {
 
     .bag {
       grid-area: bag;
+
+      a {
+        i {
+          font-size: 26px;
+        }
+        i::before {
+          content: "\e817";
+        }
+      }
+    }
+    .nav-bar {
+      ul {
+        li {
+          a {
+            display: block;
+
+            span {
+              display: block;
+              line-height: 1.1em;
+              padding: 18px 0 8px;
+              border-bottom: 4px solid transparent;
+              font-family: font-bold;
+            }
+          }
+        }
+        li:hover a {
+
+          span {
+            border-bottom: 4px solid black;
+          }
+        }
+        .franqueado {
+          display: none;
+        }
+      }
     }
   }
 }
@@ -69,35 +105,98 @@ header {
         "brand . user bag"
         "navbar navbar navbar navbar";
       grid-template-columns: auto 1fr auto auto;
+      grid-template-rows: 1fr 1fr auto;
+
+      .brand {
+        h1 {
+          padding: 26px 0 14px;
+        }
+      }
 
       .burger {
         display: none;
       }
+
+      .search {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        fieldset {
+          width: 100%;
+          float: right;
+
+          input {
+            border-bottom: 1px solid #ddd;
+            // display: block;
+            // float: right;
+            // display: inline-block;
+          }
+          input[type="text"] {
+            transition: width .3s;
+            width: 100px;
+            float: right;
+            padding: 6px;
+          }
+          input[type="text"]::placeholder {
+            color: black;
+          }
+          input[type="text"]:focus {
+            // width: calc(100% - 42px)//mudar aqui depois
+            width: 100%;
+            // width: 338px;
+          }
+          input[type="button"] {
+            width: 42px;
+          }
+        }
+      }
+
+      .user {
+        display: block;
+
+        ul {
+          li {
+            font-size: 14px;
+
+            > a, > span {
+              display: block;
+            }
+            > a:hover {
+              text-decoration: underline;
+            }
+            > a {
+              padding: 15px 16px 16px;
+            }
+            > span {
+              padding: 15px 16px 9px 0;
+            }
+          }
+        }
+      }
+
+      .bag {
+        i {
+          display: block;
+          // padding: 15px 0 16px 16px;
+        }
+      }
+      .nav-bar {
+        display: block;
+      }
+
       .nav-bar ul, .user ul {
         display: flex;
-        text-transform: uppercase;
       }
       .nav-bar ul {
+        border-bottom: 1px solid black;
         position: relative;
-        font-weight: bold;
         flex-flow: row wrap;
         // justify-content: flex-end;
         align-content: flex-end;
-        border-bottom: 1px solid black;
         border-top: 1px solid #ddd;
         li {
           margin: 0 13px;
-
-          a {
-            height: 22px;
-            line-height: 1.1em;
-            padding: 18px 0 8px;
-            display: block;
-            border-bottom: 4px solid transparent;
-          }
-          a:hover {
-            border-bottom: 4px solid black;
-          }
         }
         li:first-child {
           margin: 0 13px 0 0;
@@ -127,6 +226,95 @@ header {
         "navbar navbar navbar navbar navbar"
         "user user user user user";
       grid-template-columns: auto 1fr auto 1fr auto;
+
+      .burger-hide {
+        display: none;
+      }
+
+      .brand, .bag, .burger {
+        margin: 14px 8px;
+      }
+
+      .brand {
+        h1 {
+          a {
+            img {
+              height: 28px;
+            }
+          }
+        }
+      }
+      .search {
+        border-top: 1px solid #cbcbcb;
+        border-bottom: 1px solid #ddd;
+
+        input[type="text"] {
+          width: 100%;
+          padding: 0 10px 0 40px;
+          height: 36px;
+          line-height: 36px;
+        }
+
+        input[type="text"]::placeholder {
+          color: #c7c7c7;
+          font-family: font-bold;
+          font-size: 13px;
+          letter-spacing: .059em;
+        }
+        input[type="text"]:focus::placeholder {
+          opacity: 0.35;
+        }
+
+        input[type="button"] {
+          // display: none;
+          float: right;
+        }
+      }
+      .user {
+        background: #f5f5f5;
+        text-transform: none;
+        border-bottom: 1px solid black;
+      }
+      .nav-bar {
+        ul {
+          padding: 0 15px;
+          position: relative;
+          li {
+            display: block;
+            align-content: flex-start;
+            position: relative;
+
+            a {
+              span {
+                display: inline-block;
+              }
+            }
+          }
+          li::before {
+            content: "\e80e";
+            position: absolute;
+            right: 15px; //mexer aqui não funcionou o positon relative
+            top: 0;
+            bottom: 0;
+            display: block;
+            transform: rotate(90deg);
+          }
+        }
+      }
+      .user {
+        padding: 10px;
+        ul {
+          display: grid;
+          grid-template-areas:
+            "entrar"
+            "atendimento"
+            "televendas";
+
+          li {
+            line-height: 40px;
+          }
+        }
+      }
     }
   }
 }

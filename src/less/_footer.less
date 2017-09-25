@@ -1,0 +1,42 @@
+footer {
+  .footer-top {
+    > div {
+      display: flex;
+
+      .email {
+        form {
+          position: relative;
+
+          input[type="text"] {
+            width: 100%;
+          }
+          input[type="button"] {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            top: 0;
+          }
+        }
+      }
+    }
+  }
+  .footer-bottom {
+    > div {
+      display: flex;
+    }
+  }
+}
+
+@media screen and (min-width: 741px) {
+  footer {
+    .footer-top {
+      > div {
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 740px) {
+
+}
