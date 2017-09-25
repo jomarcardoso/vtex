@@ -65,7 +65,7 @@ module.exports = (grunt) ->
       main:
         expand: true
         cwd: 'build/'
-        src: ['*.css', '!*.min.css']
+        src: ['main.css']
         dest: 'build/'
         ext: '.min.css'
 

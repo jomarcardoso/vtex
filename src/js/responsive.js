@@ -30,8 +30,7 @@ $(function(){
 
   $('.search .busca input').attr('placeholder', 'BUSCAR POR');
   $('.burger').click(function() {
-    console.log('erro');
-    // $('.mobile-menu .burger-hide').toggle();
-    $('.mobile-menu .burger-hide').style('display', 'block');
+    $('.mobile-menu .burger-hide').toggle();
+    // $('.mobile-menu .burger-hide').style('display', 'block');
   });
 });
