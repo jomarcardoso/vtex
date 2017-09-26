@@ -28,9 +28,11 @@ $(function(){
 
 
 
-  $('.search .busca input').attr('placeholder', 'BUSCAR POR');
+  $('.search .busca input[type="text"]').attr('placeholder', 'BUSCAR POR');
   $('.burger').click(function() {
     $('.mobile-menu .burger-hide').toggle();
     // $('.mobile-menu .burger-hide').style('display', 'block');
   });
+
+  $('fieldset').addClass('simbolo');
 });

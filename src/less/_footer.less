@@ -1,40 +1,33 @@
 footer {
   .footer-top {
-    > div {
+    > div { //content
       display: flex;
-
-      .email {
-        form {
-          position: relative;
-
-          input[type="text"] {
-            width: 100%;
+      > div { //.email .lojas .redes-sociais
+        display: flex;
+        > * { //.titulo .botoes
+          display: flex;
+          align-items: center;
+          > div, input, button { //input buttonn
+            height: 44px;
           }
-          input[type="button"] {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            top: 0;
+          li, button {
+            height: 44px;
+            width: 44px;
           }
+        }
+        .botao {
+          border: 1px solid black;
         }
       }
     }
-  }
-  .footer-bottom {
-    > div {
-      display: flex;
+    input {
+      border: 1px solid var(--color-medium-gray);
     }
   }
 }
 
 @media screen and (min-width: 741px) {
-  footer {
-    .footer-top {
-      > div {
-        justify-content: space-between;
-      }
-    }
-  }
+
 }
 
 @media screen and (max-width: 740px) {

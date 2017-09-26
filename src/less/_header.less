@@ -28,6 +28,19 @@ header {
           z-index: 2;
           bottom: 0;
         }
+        input[type="button"] {
+          width: 30px;
+          background: transparent;
+          color: transparent;
+          cursor: pointer;
+        }
+      }
+      fieldset::before {
+        content: "\e81a";
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
       }
     }
 
@@ -125,6 +138,7 @@ header {
         fieldset {
           width: 100%;
           float: right;
+          padding: 0 10px;
 
           input {
             border-bottom: 1px solid #ddd;
@@ -134,21 +148,28 @@ header {
           }
           input[type="text"] {
             transition: width .3s;
-            width: 100px;
+            width: 84px;
             float: right;
             padding: 6px;
+            font-size: 11px;
+            margin-right: 30px;
           }
           input[type="text"]::placeholder {
             color: black;
+            letter-spacing: -.04em;
           }
           input[type="text"]:focus {
             // width: calc(100% - 42px)//mudar aqui depois
             width: 100%;
             // width: 338px;
           }
-          input[type="button"] {
-            width: 42px;
+          input[type="text"]:focus::placeholder {
+            opacity: 0.35;
           }
+        }
+        fieldset::before {
+          font-size: 18px;
+          padding: 2px 6px;
         }
       }
 
@@ -197,6 +218,10 @@ header {
         border-top: 1px solid #ddd;
         li {
           margin: 0 13px;
+
+          a.active {
+            color: var(--color-active);
+          }
         }
         li:first-child {
           margin: 0 13px 0 0;
@@ -248,26 +273,32 @@ header {
         border-top: 1px solid #cbcbcb;
         border-bottom: 1px solid #ddd;
 
-        input[type="text"] {
-          width: 100%;
-          padding: 0 10px 0 40px;
-          height: 36px;
-          line-height: 36px;
-        }
+        fieldset {
+          input[type="text"] {
+            width: 100%;
+            padding: 0 10px 0 40px;
+            height: 36px;
+            line-height: 36px;
+          }
 
-        input[type="text"]::placeholder {
-          color: #c7c7c7;
-          font-family: font-bold;
-          font-size: 13px;
-          letter-spacing: .059em;
-        }
-        input[type="text"]:focus::placeholder {
-          opacity: 0.35;
-        }
+          input[type="text"]::placeholder {
+            color: #c7c7c7;
+            font-family: font-bold;
+            font-size: 13px;
+            letter-spacing: .059em;
+          }
+          input[type="text"]:focus::placeholder {
+            opacity: 0.35;
+          }
 
-        input[type="button"] {
-          // display: none;
-          float: right;
+          input[type="button"] {
+            // display: none;
+            float: right;
+          }
+        }
+        fieldset::before {
+          padding: 4px 6px 0;
+          font-size: 23px;
         }
       }
       .user {
