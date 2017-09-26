@@ -1,5 +1,7 @@
 footer {
   margin: 20px 0;
+  font-size: 15px;
+
   .footer-top {
     border-top: 1px solid #000;
     border-bottom: 1px solid var(--color-medium-gray);
@@ -22,7 +24,7 @@ footer {
           display: flex;
           align-items: center;
 
-          > div, input, button, > a, li { //input buttonn
+          > div, input, button, > a, li, ul { //input buttonn
             height: 44px;
             display: block;
             display: flex;
@@ -67,6 +69,7 @@ footer {
 
         .botao {
           padding: 0 12px;
+          font-size: 14px;
         }
 
         i::before {
@@ -110,12 +113,14 @@ footer {
     }
   }
   .footer-bottom {
-    padding-top: 28px;
+
     .content {
       display: grid;
-      justify-content: flex-start;
       grid-column-gap: 34px;
-      grid-auto-flow: column;
+
+      li {
+        display: block;
+      }
     }
   }
   .copyright {
@@ -130,9 +135,95 @@ footer {
 }
 
 @media screen and (min-width: 741px) {
+  footer {
+    .footer-top {
 
+    }
+    .footer-bottom {
+      padding-top: 28px;
+
+      > .content {
+        grid-auto-flow: column;
+        justify-content: flex-start;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 740px) {
+  footer {
+    .footer-top {
+      border-top: 0;
+      
+      .content {
+        flex-wrap: wrap;
 
+        > div {
+          display: block;
+          // flex-direction: row;
+        }
+        .email {
+          // flex: 2;
+          width: 100%;
+          background-color: black;
+          color: white;
+          padding: 30px 10px;
+
+          .titulo {
+            font-family: font-bold;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+          }
+          input {
+            flex: 1;
+          }
+
+          input, button {
+            border: 1px solid white;
+          }
+          button {
+            background: black;
+            color: white;
+          }
+        }
+        .lojas, .redes-sociais {
+          flex: 1;
+          width: 50%;
+        }
+        .lojas {
+          > * {
+            justify-content: flex-start;
+          }
+        }
+        .redes-sociais {
+          padding-right: 15px;
+          > * {
+            justify-content: flex-end;
+          }
+        }
+      }
+    }
+    .footer-bottom {
+      > .content {
+        grid-auto-flow: row;
+
+        li {
+          border-bottom: 1px solid var(--color-medium-gray);
+          flex: 1;
+          width: 100%;
+
+          a {
+            padding: 10px;
+            display: block;
+            width: 100%;
+            text-align: center;
+          }
+          a:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
 }
