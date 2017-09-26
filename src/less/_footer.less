@@ -24,7 +24,7 @@ footer {
           display: flex;
           align-items: center;
 
-          > div, input, button, > a, li, ul { //input buttonn
+          > div, input, button, > a, li a, ul { //input buttonn
             height: 44px;
             display: block;
             display: flex;
@@ -88,6 +88,14 @@ footer {
           margin-left: 15px;
 
           li {
+            position: relative;
+            a {
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+            }
             i::before {
               font-size: 23px;
             }
@@ -120,6 +128,10 @@ footer {
 
       li {
         display: block;
+
+        a:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
@@ -154,7 +166,7 @@ footer {
   footer {
     .footer-top {
       border-top: 0;
-      
+
       .content {
         flex-wrap: wrap;
 
@@ -218,9 +230,6 @@ footer {
             display: block;
             width: 100%;
             text-align: center;
-          }
-          a:hover {
-            text-decoration: underline;
           }
         }
       }
