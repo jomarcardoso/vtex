@@ -1,0 +1,63 @@
+<html>
+<html
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce"
+    lang="en-us" class="light-rounded palette1 colorful night light jabuti sandwich"
+>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Controles Vtex</title>
+</head>
+<body>
+  <div>
+    <h2>Bread Crumb</h2>
+    <p>Funciona apenas nas páginas de Produto, Departamento, Categoria e Busca.</p>
+    <vtex.cmc:breadCrumb />
+  </div>
+  <div>
+    <h2>Busca Total</h2>
+    <vtex.cmc:fullTextSearchBox/>
+  </div>
+  <div>
+    <h2>Histórico de Navegação</h2>
+    <p>Utilizado apenas para compor o conteúdo dos controles </p>
+    <vtex.cmc:navigationHistory/>
+  </div>
+  <div>
+    <h2>Localizador de Lojas </h2>
+    <p>Requisitos: Cadastrar no ADMIN as Lojas Físicas e seus endereços. Além disso, pesquisar cada endereço no Google Maps e preencher os devidos campos. Necessário configurar no banco de conexão da Loja a chave do Google Maps adquirida pela Loja.</p>
+    <vtex.cmc:storeFlagLocator/>
+  </div>
+  <div>
+    <h2>Mensagem de Boas Vindas </h2>
+    <p>No admin, na aba Configurações > Textos, é possível alterar a frase de Bem vindo.</p>
+    <vtex.cmc:welcomeMessage/>
+  </div>
+  <div>
+    <h2>Links de Departamentos</h2>
+    <p>Apresenta o primeiro nível de categorias criado no Admin. Necessário configurar no Departamento que o mesmo será apresentado no Menu Superior.</p>
+    <vtex.cmc:departmentLinks/>
+  </div>
+  <div>
+    <h2>Menu de Departamentos</h2>
+    <p>Os Departamentos e Categorias são apresentadas de acordo com o cadastro dos 1º e 2º Níveis. Para exibir o Link “Lista Completa”, também é necessário uma configuração nas Categorias Ativas do Departamento.</p>
+    <vtex.cmc:departmentNavigator/>
+  </div>
+  <div>
+    <h2>	Título da Página </h2>
+    <p>Exibe o título das páginas de Departamento, Categoria e Busca.</p>
+    <vtex.cmc:searchTitle />
+  </div>
+  <div>
+    <h2>Espiar (QuickView) </h2>
+    <p>Controle deve ser adicionado antes do fechamento da tag body do template de página de Quickview. Ele é fundamental para o carregamento dos arquivos necessários da página.</p>
+    <vtex.cmc:productQuickView/>
+  </div>
+  <div>
+    <h2>Prateleira</h2>
+    <vtex.cmc:ProductQueryStringReferenceShelf layout="e2ed81f5-6241-4418-a47b-018d7482fcf0" itemCount="3" columnCount="3" showUnavailable="true" isTrackable="true" InternalCampaign="Destaque landing" InternalPart="Prateleira destaque" />
+  </div>
+</body>
+</html>

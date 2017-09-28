@@ -1,0 +1,66 @@
+<!--
+ *
+ * Desenvolvido por Integrando.se
+ * hello@integrando.se
+ *
+ * Bootstrap v.3
+ *
+ -->
+
+<!DOCTYPE html>
+<html
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce"
+    lang="en-us" class="light-rounded palette1 colorful night light jabuti sandwich"
+>
+  <head>
+    <meta charset="utf-8" />
+    <title>layout</title>
+    <!--<link rel="stylesheet" href="/arquivos/css2.css" />-->
+    <!--<vtex:template id="commonStyles" />-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+    <link href="/arquivos/owl.carousel.css" rel="stylesheet" type="text/css" />
+    <link href="/arquivos/style2.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body
+  style="
+    --min-width-body-content: 300px;
+    --max-width-body-content: 800px;
+    --min-height-body-content: 300px;
+    --max-height-body-content: 800px;
+  ">
+    <vtex:template id="JomarLoja-Header" />
+    <main>
+      <vtex:template id="JomarLoja-NavTop" />
+      <div class="banner">
+        <div class="content">
+          <vtex:contentPlaceHolder id="banner" />
+        </div><!-- .fullbanner -->
+      </div>
+      <div class="carousel">
+        <div class="content fullbanner">
+            <vtex:contentPlaceHolder id="destaques" />
+        </div><!-- .fullbanner -->
+      </div>
+      <section>
+        <div class="content">
+            <div class="banner-double banner-acessories">
+                <vtex:contentPlaceHolder id="acessorios" />
+            </div>
+            <div class="shelf shelf-home prateleira-lancamentos showcase-default showcase-owl">
+                <vtex:contentPlaceHolder id="Lançamentos" />
+            </div>
+            <div class="banner-double banner-cards">
+                <vtex:contentPlaceHolder id="Cartoes" />
+            </div>
+            <div class="shelf shelf-home prateleira-ultimos-vistos showcase-default showcase-owl">
+                <vtex:contentPlaceHolder id="Ultimos-Vistos" />
+            </div>
+        </div>
+      </section>
+    </main>
+
+  </body>
+  <vtex:template id="commonScripts" />
+</html>
