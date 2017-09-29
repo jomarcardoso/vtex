@@ -46,7 +46,7 @@ module.exports = (grunt) ->
           expand: true
           cwd: 'src/'
           src: ['**/*.coffee']
-          dest: "build/"
+          dest: "build/arquivos/"
           ext: '.js'
           # 'build/main.coffee': ['src/js/*.js']
         ]
@@ -57,16 +57,16 @@ module.exports = (grunt) ->
           expand: true
           cwd: 'src/'
           src: ['**/*.less']
-          dest: "build/"
+          dest: "build/arquivos/"
           ext: '.css'
         ]
 
     cssmin:
       main:
         expand: true
-        cwd: 'build/'
+        cwd: 'build/arquivos/'
         src: ['main.css']
-        dest: 'build/'
+        dest: 'build/arquivos/'
         ext: '.min.css'
 
     uglify:
@@ -79,7 +79,7 @@ module.exports = (grunt) ->
           # src: ['*.js', '!*.min.js']
           # dest: 'build/'
           # ext: '.min.js'
-          'build/main.min.js': ['build/js/*.js']
+          'build/arquivos/main.min.js': ['build/js/*.js']
         }]
 
     sprite:
