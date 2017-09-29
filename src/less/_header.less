@@ -20,15 +20,16 @@ header {
 
       fieldset {
         position: relative;
-        input[type="button"] {
+
+        input {
           text-transform: uppercase;
+        }
+        input[type="button"] {
           position: absolute;
           right: 10px;
           top: 0;
           z-index: 2;
           bottom: 0;
-        }
-        input[type="button"] {
           width: 30px;
           background: transparent;
           color: transparent;
@@ -151,6 +152,8 @@ header {
 
           input {
             border-bottom: 1px solid #ddd;
+            font-family: font-normal;       
+                 
             // display: block;
             // float: right;
             // display: inline-block;
@@ -159,8 +162,7 @@ header {
             transition: width .3s;
             width: 84px;
             float: right;
-            padding: 6px;
-            font-size: 11px;
+            padding: 6px;            
             margin-right: 30px;
           }
           input[type="text"]::placeholder {
@@ -290,6 +292,7 @@ header {
             padding: 0 10px 0 40px;
             height: 36px;
             line-height: 36px;
+            opacity: 1;
           }
 
           input[type="text"]::placeholder {
