@@ -96,6 +96,13 @@ header {
             }
           }
         }
+        li.active {
+          a {
+            span {
+              color: var(--color-active);
+            }
+          }
+        }
         li:hover a {
 
           span {
@@ -112,6 +119,8 @@ header {
 
 @media screen and (min-width: 741px) {
   header {
+    margin-bottom: 146px;
+
     .header .content {
       grid-template-areas:
         "brand . search search"
@@ -244,6 +253,8 @@ header {
 
 @media screen and (max-width: 740px) {
   header {
+    margin-bottom: 101px;
+    
     .header .content {
       grid-template-areas:
         "burger . brand . bag"
