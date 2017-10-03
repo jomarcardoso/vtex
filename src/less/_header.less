@@ -1,5 +1,5 @@
 header {
-  #header .content {
+  .header .content {
     display: grid;
     text-transform: uppercase;
     position: absolute;
@@ -20,15 +20,16 @@ header {
 
       fieldset {
         position: relative;
-        input[type="button"] {
+
+        input {
           text-transform: uppercase;
+        }
+        input[type="button"] {
           position: absolute;
           right: 10px;
           top: 0;
           z-index: 2;
           bottom: 0;
-        }
-        input[type="button"] {
           width: 30px;
           background: transparent;
           color: transparent;
@@ -96,6 +97,13 @@ header {
             }
           }
         }
+        li.active {
+          a {
+            span {
+              color: var(--color-active);
+            }
+          }
+        }
         li:hover a {
 
           span {
@@ -112,7 +120,9 @@ header {
 
 @media screen and (min-width: 741px) {
   header {
-    #header .content {
+    margin-bottom: 146px;
+
+    .header .content {
       grid-template-areas:
         "brand . search search"
         "brand . user bag"
@@ -142,6 +152,8 @@ header {
 
           input {
             border-bottom: 1px solid #ddd;
+            font-family: font-normal;       
+                 
             // display: block;
             // float: right;
             // display: inline-block;
@@ -150,8 +162,7 @@ header {
             transition: width .3s;
             width: 84px;
             float: right;
-            padding: 6px;
-            font-size: 11px;
+            padding: 6px;            
             margin-right: 30px;
           }
           input[type="text"]::placeholder {
@@ -244,7 +255,9 @@ header {
 
 @media screen and (max-width: 740px) {
   header {
-    #header .content {
+    margin-bottom: 101px;
+    
+    .header .content {
       grid-template-areas:
         "burger . brand . bag"
         "search search search search search"
@@ -279,6 +292,7 @@ header {
             padding: 0 10px 0 40px;
             height: 36px;
             line-height: 36px;
+            opacity: 1;
           }
 
           input[type="text"]::placeholder {
