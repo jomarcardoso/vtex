@@ -1,0 +1,83 @@
+body {
+    &.body-prat {
+        width: 100%;
+    }
+}
+.container{
+    width: 80%;
+    margin:50px 130px; 
+    .borda{
+        padding:0 70px;
+        border: 1px solid #bebebe;
+    }
+}
+.owl {
+    // margin-top: 50px;
+    // margin-left: 100px;
+    // border: 1px solid #bebebe;
+    .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 231px;
+        border-bottom: 3px solid white;
+        cursor: pointer;
+        &:hover {
+            border-right: 1px solid #bebebe;
+            border-left: 1px solid #bebebe;
+            border-bottom: 3px solid black;
+            .button-buy {
+                visibility: visible;
+            }
+        }
+        .product-title {
+            display: none;
+        }
+        .product-image {
+            height: 128px;
+            width: 117px;
+        }
+        .product-price {
+            color: black;
+            margin: 15px 0 5px 0;
+        }
+        .button-buy {
+            position: relative;
+            width: 92px;
+            height: 35px;
+            margin: 7px auto 0;
+            border: 1px solid black;
+            text-align: center;
+            margin-bottom: 5px;
+            padding-top: 5px;
+            visibility: hidden;
+            transition: all .2s ease;
+        }
+    }
+    .owl-buttons {
+        display: block;
+        color: #ededed;
+        &:hover{
+            color:#bebebe;
+        }
+        .owl-prev {
+            width: 15px;
+            height: 100px;
+            position: absolute;
+            top: 40%;
+            margin-left: -40px;
+            display: block!IMPORTANT;
+            border: 0px solid black;
+        }
+        .owl-next {
+            width: 15px;
+            height: 100px;
+            position: absolute;
+            top: 40%;
+            right: -40px;
+            display: block!IMPORTANT;
+            border: 0px solid black;
+        } // .owl-prev i, .owl-next i {transform : scale(1,6); color: #ccc;}
+    }
+}
