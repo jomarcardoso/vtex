@@ -1,3 +1,5 @@
+@import '_variables';
+
 header {
   .header .content {
     display: grid;
@@ -118,7 +120,118 @@ header {
   }
 }
 
-@media screen and (min-width: 741px) {
+@media (max-width: @max-tablet) {
+  header {
+    margin-bottom: 101px;
+    
+    .header .content {
+      grid-template-areas:
+        "burger . brand . bag"
+        "search search search search search"
+        "navbar navbar navbar navbar navbar"
+        "user user user user user";
+      grid-template-columns: auto 1fr auto 1fr auto;
+
+      .burger-hide {
+        display: none;
+      }
+
+      .brand, .bag, .burger {
+        margin: 14px 8px;
+      }
+
+      .brand {
+        h1 {
+          a {
+            img {
+              height: 28px;
+            }
+          }
+        }
+      }
+      .search {
+        border-top: 1px solid #cbcbcb;
+        border-bottom: 1px solid #ddd;
+
+        fieldset {
+          input[type="text"] {
+            width: 100%;
+            padding: 0 10px 0 40px;
+            height: 36px;
+            line-height: 36px;
+            opacity: 1;
+          }
+
+          input[type="text"]::placeholder {
+            color: #c7c7c7;
+            font-family: font-bold;
+            font-size: 13px;
+            letter-spacing: .059em;
+          }
+          input[type="text"]:focus::placeholder {
+            opacity: 0.35;
+          }
+
+          input[type="button"] {
+            // display: none;
+            float: right;
+          }
+        }
+        fieldset::before {
+          padding: 4px 6px 0;
+          font-size: 23px;
+        }
+      }
+      .user {
+        background: #f5f5f5;
+        text-transform: none;
+        border-bottom: 1px solid black;
+      }
+      .nav-bar {
+        ul {
+          padding: 0 15px;
+          position: relative;
+          li {
+            display: block;
+            align-content: flex-start;
+            position: relative;
+
+            a {
+              span {
+                display: inline-block;
+              }
+            }
+          }
+          li::before {
+            content: "\e80e";
+            position: absolute;
+            right: 15px; //mexer aqui não funcionou o positon relative
+            top: 0;
+            bottom: 0;
+            display: block;
+            transform: rotate(90deg);
+          }
+        }
+      }
+      .user {
+        padding: 10px;
+        ul {
+          display: grid;
+          grid-template-areas:
+            "entrar"
+            "atendimento"
+            "televendas";
+
+          li {
+            line-height: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: @min-laptop) {
   header {
     margin-bottom: 146px;
 
@@ -138,6 +251,10 @@ header {
 
       .burger {
         display: none;
+      }
+
+      .burger-hide {
+        display: block;
       }
 
       .search {
@@ -253,113 +370,4 @@ header {
   }
 }
 
-@media screen and (max-width: 740px) {
-  header {
-    margin-bottom: 101px;
-    
-    .header .content {
-      grid-template-areas:
-        "burger . brand . bag"
-        "search search search search search"
-        "navbar navbar navbar navbar navbar"
-        "user user user user user";
-      grid-template-columns: auto 1fr auto 1fr auto;
 
-      .burger-hide {
-        display: none;
-      }
-
-      .brand, .bag, .burger {
-        margin: 14px 8px;
-      }
-
-      .brand {
-        h1 {
-          a {
-            img {
-              height: 28px;
-            }
-          }
-        }
-      }
-      .search {
-        border-top: 1px solid #cbcbcb;
-        border-bottom: 1px solid #ddd;
-
-        fieldset {
-          input[type="text"] {
-            width: 100%;
-            padding: 0 10px 0 40px;
-            height: 36px;
-            line-height: 36px;
-            opacity: 1;
-          }
-
-          input[type="text"]::placeholder {
-            color: #c7c7c7;
-            font-family: font-bold;
-            font-size: 13px;
-            letter-spacing: .059em;
-          }
-          input[type="text"]:focus::placeholder {
-            opacity: 0.35;
-          }
-
-          input[type="button"] {
-            // display: none;
-            float: right;
-          }
-        }
-        fieldset::before {
-          padding: 4px 6px 0;
-          font-size: 23px;
-        }
-      }
-      .user {
-        background: #f5f5f5;
-        text-transform: none;
-        border-bottom: 1px solid black;
-      }
-      .nav-bar {
-        ul {
-          padding: 0 15px;
-          position: relative;
-          li {
-            display: block;
-            align-content: flex-start;
-            position: relative;
-
-            a {
-              span {
-                display: inline-block;
-              }
-            }
-          }
-          li::before {
-            content: "\e80e";
-            position: absolute;
-            right: 15px; //mexer aqui não funcionou o positon relative
-            top: 0;
-            bottom: 0;
-            display: block;
-            transform: rotate(90deg);
-          }
-        }
-      }
-      .user {
-        padding: 10px;
-        ul {
-          display: grid;
-          grid-template-areas:
-            "entrar"
-            "atendimento"
-            "televendas";
-
-          li {
-            line-height: 40px;
-          }
-        }
-      }
-    }
-  }
-}

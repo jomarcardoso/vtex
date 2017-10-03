@@ -1,3 +1,74 @@
+//banner
+$(document).ready(function () {
+    $('.owl-page').addClass('dots');
+    $('.owl-page.active').addClass('active');
+});
+
+//prateleira
+$(document).ready(function () {
+
+    // $('.owl').on('desktop', function() {
+    //     banner_carousel(5);
+    // })
+
+    // $('.owl').on('laptop', function() {
+    //     banner_carousel(5);
+    // })
+
+    // $('.owl').on('tablet', function() {
+    //     banner_carousel(4);
+    // })
+
+    // $('.owl').on('smartphone-large', function() {
+    //     banner_carousel(3);
+    // })
+
+    // $('.owl').on('smartphone-medium', function() {
+    //     banner_carousel(2);
+    // })
+
+    // $('.owl').on('smartphone-small', function() {
+    //     banner_carousel(1);
+    // })
+
+    // function banner_carousel(nitems) {
+    //     $('.owl').owlCarousel({
+    //         loop:true,
+    //         margin:10,
+    //         autoWidth:false,
+    //         navigation:true,
+    //         rewindNav:false,
+    //         scrollPerPage : true,
+    //         items: 4,
+    //         navigationText: ['<i class="fa fa-angle-left fa-3x" aria-hidden="true"></i>','<i class="fa fa-angle-right fa-3x" aria-hidden="true"></i>']
+    //     })
+    // }
+    $('.owl').owlCarousel({        
+        loop:true,
+        margin:10,
+        autoWidth:false,
+        navigation:true,
+        rewindNav:false,
+        scrollPerPage : true,
+        items: 5,
+        navigationText: ['<i class="fa fa-angle-left fa-3x" aria-hidden="true"></i>','<i class="fa fa-angle-right fa-3x" aria-hidden="true"></i>']
+    })
+});
+
+//prateleira 5 itens
+
+//prateleia 4 itens
+
+//prateleira 3 itens
+
+//prateleia 2 itens
+
+//prateleia 1 item
+
+//imagens produto 2 itens
+
+
+
 // /*
 //  *
 //  * Desenvolvido por Integrando.se
@@ -110,7 +181,6 @@
 // 	}
 
 // 	if( $.fn.owlCarousel ){
-
 // 		var $fullbanner = $(".fullbanner");
 // 		if( $fullbanner.length ){
 // 			$fullbanner.owlCarousel({
