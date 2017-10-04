@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+
+  <!-- scripts carregados automaticamente -->
+  <meta name="country" content="BRA">
+  <meta name="currency" content="R$">
+  <script type="text/javascript" language="javascript">
+    var jscheckoutUrl = 'https://cwi.vtexcommercestable.com.br/checkout/#/cart';
+    var jscheckoutAddUrl = 'https://cwi.vtexcommercestable.com.br/checkout/cart/add';
+    var jscheckoutGiftListId = '';
+    var jsnomeSite = 'cwi';
+    var jsnomeLoja = 'cwi';
+    var jssalesChannel = '1';
+    var defaultStoreCurrency = 'R$';
+    var localeInfo = {
+      "CountryCode": "BRA",
+      "CultureCode": "pt-BR",
+      "CurrencyLocale": {
+        "RegionDisplayName": "Brazil",
+        "RegionName": "BR",
+        "RegionNativeName": "Brasil",
+        "TwoLetterIsoRegionName": "BR",
+        "CurrencyEnglishName": "Real",
+        "CurrencyNativeName": "Real",
+        "CurrencySymbol": "R$",
+        "ISOCurrencySymbol": "BRL",
+        "Locale": 1046,
+        "Format": {
+          "CurrencyDecimalDigits": 2,
+          "CurrencyDecimalSeparator": ",",
+          "CurrencyGroupSeparator": ".",
+          "CurrencyGroupSize": 3,
+          "StartsWithCurrencySymbol": true
+        },
+        "FlagUrl": "http://www.geonames.org/flags/x/br.gif"
+      }
+    };
+  </script>
+  <script type="text/javascript" language="javascript">
+    vtxctx = {
+      searchTerm: "vtextutorial",
+      isOrder: "0",
+      isCheck: "0",
+      isCart: "0",
+      actionType: "",
+      actionValue: "",
+      login: "10606d42-a81d-43d2-a3cd-95b4a472e4aa",
+      url: "cwi.vtexcommercestable.com.br",
+      transurl: "cwi.vtexcommercestable.com.br"
+    };
+  </script>
+  <script language="javascript" src="http://cwi.vteximg.com.br/Scripts/mobile/mdetect.js?v=1.4.825.1483" type="text/javascript"></script>
+  <script language="javascript" src="http://cwi.vteximg.com.br/Scripts/mobile/mdetect2.js?v=1.4.825.1483" type="text/javascript"></script>
+  <script language="javascript" src="http://io.vtex.com.br/front-libs/jquery/1.8.3/jquery-1.8.3.min.js?v=1.4.825.1483" type="text/javascript"></script>
+  <script language="javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js?v=1.4.825.1483" type="text/javascript"></script>
+  <script language="javascript" src="http://cwi.vteximg.com.br/Scripts/vtex.ajax.wait.js?v=1.4.825.1483" type="text/javascript"></script>
+  <script language="javascript" src="http://cwi.vteximg.com.br/Scripts/vtex.common.js?v=1.4.825.1483" type="text/javascript"></script>
+  <script language="javascript" src="http://io.vtex.com.br/front-libs/front-i18n/0.4.1/vtex-i18n.min.js?v=1.4.825.1483" type="text/javascript"></script>
+  <script language="javascript" src="http://io.vtex.com.br/front-libs/front-utils/1.0.1/vtex-utils.min.js?v=1.4.825.1483" type="text/javascript"></script>
+  <script language="javascript" src="http://io.vtex.com.br/front-libs/dustjs-linkedin/2.3.5/dust-core-2.3.5.min.js?v=1.4.825.1483"
+    type="text/javascript"></script>
+  <script language="javascript" src="http://dmx56ht1p4edz.cloudfront.net/rc.js?an=cwi?v=1.4.825.1483" type="text/javascript"></script>
+  <script language="javascript" src="http://cwi.vteximg.com.br/Scripts/vtex.tagmanager.helper.js?v=1.4.825.1483" type="text/javascript"></script>
+  <script language="javascript" src="http://io.vtex.com.br/portal-ui/1.10.0/scripts/vtex-events-all.min.js?v=1.4.825.1483"
+    type="text/javascript"></script>
+  <script language="javascript" src="http://io.vtex.com.br/portal-ui/1.10.0/scripts/vtex-analytics.js?v=1.4.825.1483" type="text/javascript"></script>
+  <script language="javascript" src="http://io.vtex.com.br/vtex.js/2.8.0/vtex.min.js?v=1.4.825.1483" type="text/javascript"></script>
+  <script language="javascript" src="http://cwi.vteximg.com.br/Scripts/jquery.ui.core.js?v=1.4.825.1483" type="text/javascript"></script>
+  <script language="javascript" src="http://cwi.vteximg.com.br/Scripts/autocomplete/jquery.ui.widget.js?v=1.4.825.1483" type="text/javascript"></script>
+  <script language="javascript" src="http://cwi.vteximg.com.br/Scripts/autocomplete/jquery.ui.position.js?v=1.4.825.1483" type="text/javascript"></script>
+  <script language="javascript" src="http://cwi.vteximg.com.br/Scripts/autocomplete/jquery.ui.autocomplete.js?v=1.4.825.1483"
+    type="text/javascript"></script>
+  <script language="javascript" src="http://cwi.vteximg.com.br/Scripts/vtex.commerce.search.js?v=1.4.825.1483" type="text/javascript"></script>
+  <script language="javascript" src="http://cwi.vteximg.com.br/Scripts/vtex.viewPart.fullTextSearchBox.js?v=1.4.825.1483" type="text/javascript"></script>
+  <script language="javascript" src="http://io.vtex.com.br/portal-plugins/2.9.13/js/portal-template-as-modal.min.js?v=1.4.825.1483"
+    type="text/javascript"></script>
+  <script language="javascript" src="http://io.vtex.com.br/portal-plugins/2.9.13/js/portal-sku-selector-with-template.min.js?v=1.4.825.1483"
+    type="text/javascript"></script>
+  <script language="javascript" src="http://cwi.vteximg.com.br/Scripts/vtex.cookie.js?v=1.4.825.1483" type="text/javascript"></script>
+  <script language="javascript" src="http://cwi.vteximg.com.br/Scripts/jquery.pager.js?v=1.4.825.1483" type="text/javascript"></script>
+
+  <!-- Start - WebAnalyticsViewPart -->
+  <script>
+    var defaultUtmFromFolder = '';
+  </script>
+  <!-- <vtex:metaTags/> -->
+  <meta name="description" content="Adicionar aqui uma boa descrição da sua loja virtual. Esta descrição será mostrada nos resultados de busca do Google.">
+  <meta name="Abstract" content="cwi">
+  <meta name="author" content="cwi">
+  <meta name="copyright" content="cwi">
+  <meta name="vtex-version" content="1.4.796.1438">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Modelo Vtex</title>
+
+  <title>NOME DA PÁGINA</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="http://cwi.vteximg.com.br/arquivos/jquery-ui.min.css" />
+  <link href="http://cwi.vteximg.com.br/arquivos/owl.carousel.css" rel="stylesheet" type="text/css" />
+
+  <link rel="stylesheet" href="../../arquivos/main.css">
+
+  <script language="javascript">
+    var ___scriptPathTransac = '';
+  </script>
+  <script language="javascript">
+    var ___scriptPath = '';
+  </script>
+
+</head>
+
+<body id="test-home" class="VtexTutorial">
+
+  <!-- seu codigo aqui -->
+
+
+  <header>
+    <div id="welcome-bar">
+      <div class="content"></div>
+    </div>
+    <div class="header">
+      <div class="content">
+        <section class="brand">
+          <h1>
+            <a href="">
+              <!-- <img src="/arquivos/img/ARZ-Logotipo-277x51.png" alt="Arezzo" /> -->
+              <!-- remover daqui -->
+              <img src="../../arquivos/img/ARZ-Logotipo-277x51.png" alt="Arezzo">
+              <!-- remover até aqui -->
+            </a>
+          </h1>
+        </section>
+        <section class="search">
+          <!-- remover daqui -->
+          <!-- <script type="text/javascript" language="javascript"> /*<![[*/ $(document).ready(function(){currentDept = '0'; enableFullTextSearchBox('ftBox4856fba37fea4b12bc81b87f80417248', 'ftDept4856fba37fea4b12bc81b87f80417248', 'ftIdx4856fba37fea4b12bc81b87f80417248', 'ftBtn4856fba37fea4b12bc81b87f80417248', '/SEARCHTERM','Digite Aqui' );}); /*]]>*/ </script> -->
+          <fieldset class="busca">CDATA
+            <legend>Buscar no site</legend>
+            <label>Buscar</label>
+            <select id="ftDept2def2f3ccd494f47a2d9357af336f8b9">
+                      <option value="">Todo o site</option>
+                      <option value="18">Casa e Jardim</option>
+                      <option value="8">Eletrônicos</option>
+                      <option value="4">Moda</option>
+                      <option value="9">Móveis</option>
+                      <option value="22">Informática</option>
+                    </select>
+            <input type="hidden" id="ftIdx2def2f3ccd494f47a2d9357af336f8b9" value="">
+            <input id="ftBox2def2f3ccd494f47a2d9357af336f8b9" class="fulltext-search-box ui-autocomplete-input" type="text" size="20"
+              accesskey="b" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true">
+            <!-- <input id="ftBtn2def2f3ccd494f47a2d9357af336f8b9" type="button" value="Buscar" class="btn-buscar"> -->
+            <input id="ftBtn2def2f3ccd494f47a2d9357af336f8b9" type="button" value="buscar" class="btn-buscar">
+          </fieldset>
+          <!-- remover até aqui -->
+          <!-- <vtex.cmc:fullTextSearchBox/> -->
+        </section>
+        <section class="user burger-hide">
+          <ul>
+            <!-- <li><span>Televendas <vtex.cmc:telefone /></span></li> -->
+            <li class="televendas"><span>Televendas 11 2388 8220<vtex.cmc:telefone /></span></li>
+            <!-- apagar -->
+            <li class="atendimento"><a href="">Atendimento</a></li>
+            <li class="entrar"><a href="">Entrar</a></li>
+          </ul>
+        </section>
+        <section class="bag">
+          <a href="">
+                  <i class="simbolo"></i>
+                </a>
+        </section>
+        <nav class="nav-bar burger-hide">
+          <!-- <vtex.cmc:departmentLinks/> -->
+          <!-- remover daqui -->
+          <ul class="menu">
+            <li class="menu-casa-e-jardim simbolo">
+              <a href="http://cwi.vtexlocal.com.br/casa-e-jardim"><span>SAPATOS</span></a>
+            </li>
+            <li class="menu-eletronicos simbolo">
+              <a href="http://cwi.vtexlocal.com.br/eletronicos"><span>BOLSAS</span></a>
+            </li>
+            <li class="menu-moda simbolo">
+              <a href="http://cwi.vtexlocal.com.br/moda"><span>NOVIDADES</span></a>
+            </li>
+            <li class="menu-moveis simbolo">
+              <a href="http://cwi.vtexlocal.com.br/moveis"><span>CLASSIC</span></a>
+            </li>
+            <li class="menu-informatica simbolo">
+              <a href="http://cwi.vtexlocal.com.br/informatica"><span>ESPECIAIS</span></a>
+            </li>
+            <li class="menu-informatica simbolo active">
+              <a href="http://cwi.vtexlocal.com.br/informatica"><span>PROMOÇÃO</span></a>
+            </li>
+            <li class="menu-informatica simbolo">
+              <a href="http://cwi.vtexlocal.com.br/informatica"><span>DISNEY X AREZZO</span></a>
+            </li>
+            <li class="franqueado">
+              <a href="">SEJA UM FRANQUEADO</a>
+            </li>
+          </ul>
+          <!-- remover até aqui -->
+        </nav>
+        <div class="burger">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="content">
+      <div class="fullbanner">
+        <div class="box-banner">
+          <a href="http://cwi.vtexcommercestable.com.br/">
+                <img width="1180" height="450" id="ihttp://cwi.vteximg.com.br/arquivos/ids/155441/1180x450-banner-home.jpg" alt="Banner VTEXTutorial" src="http://cwi.vteximg.com.br/arquivos/ids/155441/1180x450-banner-home.jpg" complete="complete"/>
+              </a>
+        </div>
+        <div class="box-banner">
+          <a>
+                 <img width="1180" height="450" id="ihttp://cwi.vteximg.com.br/arquivos/ids/155442/ARZ-18-V-GARDEN-21SET-HOME-DESKTOP.jpg" alt="banner" src="http://cwi.vteximg.com.br/arquivos/ids/155442/ARZ-18-V-GARDEN-21SET-HOME-DESKTOP.jpg" complete="complete"/>
+                </a>
+        </div>
+      </div>
+    </div>
+    <div class="session-home">
+      <h3 class="session-title">VERÃO 2018 | Favoritos </h3>
+    </div>
+
+    <div class="container">
+        <div class="borda">
+          <div class="owl">
+            <div class="item">
+              <img class="product-image" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/h74/h57/h00/h00/8988149612574/1076500040002U-01-BASEIMAGE-Lores.jpg"
+                id="product-1076500040002U" alt="Espadrille Suede Bordado Étnico Nude Vintage">
+              <span class="product-title">Espadrille Suede Bordado Étnico Nude Vintage</span>
+              <span class="product-price">R$319,90</span>
+              <a href="/sapatos/sandalias/sandalia-nobuck-no-blue-bird/p/0259800990001U" class="button-buy" tabindex="0">
+              <span>Comprar</span>
+            </a>
+            </div>
+            <div class="item">
+              <img class="product-image" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/hdd/h7d/h00/h00/8988125626398/0259800990001U-01-BASEIMAGE-Lores.jpg"
+                id="product-0259800990001U" alt="Sandália Nobuck Nó Blue Bird">
+              <span class="product-title">Sandália Nobuck Nó Blue Bird</span>
+              <span class="product-price">R$279,90</span>
+              <a href="/sapatos/sandalias/sandalia-nobuck-no-blue-bird/p/0259800990001U" class="button-buy" tabindex="0">
+              <span>Comprar</span>
+            </a>
+            </div>
+            <div class="item">
+              <img class="product-image" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/hf2/h24/h00/h00/8988202565662/0182008010001U-01-BASEIMAGE-Lores.jpg"
+                id="product-0182008010001U" alt="Sandália Multi Havanna">
+              <span class="product-title">Sandália Multi Havanna</span>
+              <span class="product-price">R$279,90</span>
+              <a href="/sapatos/sandalias/sandalia-nobuck-no-blue-bird/p/0259800990001U" class="button-buy" tabindex="0">
+                <span>Comprar</span>
+              </a>
+            </div>
+            <div class="item">
+              <img class="product-image" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/h00/hff/h00/h00/8989120266270/0443101010003U-01-BASEIMAGE-Lores.jpg"
+                id="product-0443101010003U" alt="Sandália Nobuck Plataforma Fibras Cross Tango">
+              <span class="product-title">Sandália Nobuck Plataforma Fibras Cross Tango</span>
+              <span class="product-price">R$279,90</span>
+              <a href="/sapatos/sandalias/sandalia-nobuck-no-blue-bird/p/0259800990001U" class="button-buy" tabindex="0">
+                <span>Comprar</span>
+              </a>
+            </div>
+            <div class="item">
+              <img class="product-image" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/hce/h07/h00/h00/8985903169566/1077200070002U-01-BASEIMAGE-Lores.jpg"
+                id="product-1077200070002U" alt="Espadrille Suede Tornozeleira Mel">
+              <span class="product-title">Espadrille Suede Tornozeleira Mel</span>
+              <span class="product-price">R$299,90</span>
+              <a href="/sapatos/sandalias/sandalia-nobuck-no-blue-bird/p/0259800990001U" class="button-buy" tabindex="0">
+                <span>Comprar</span>
+              </a>
+            </div>
+            <div class="item">
+              <img class="product-image" id="product-0446901790002U" alt="Espadrille Ponteira Lace Up Lady Pink" class="" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/h7a/h18/h00/h00/8989171908638/0446901790002U-01-BASEIMAGE-Lores.jpg"
+                style="opacity: 1;">
+              <span class="product-title">Espadrille Ponteira Lace Up Lady Pink</span>
+              <span class="product-price">R$229,90</span>
+              <a href="/sapatos/sandalias/sandalia-nobuck-no-blue-bird/p/0259800990001U" class="button-buy" tabindex="0">
+                <span>Comprar</span>
+              </a>
+            </div>
+            <div class="item">
+              <img class="product-image" id="product-1073500060001U" alt="Chinelo Suede Nó Blue Bird" class="" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/h1e/ha0/h00/h00/8988093579294/1073500060001U-01-BASEIMAGE-Lores.jpg"
+                style="opacity: 1;">
+              <span class="product-title">Chinelo Suede Nó Blue Bird</span>
+              <span class="product-price">R$239,90</span>
+              <a href="/sapatos/sandalias/sandalia-nobuck-no-blue-bird/p/0259800990001U" class="button-buy" tabindex="0">
+                <span>Comprar</span>
+              </a>
+            </div>
+            <div class="item">
+              <img class="product-image" id="product-1081600020003U" alt="Rasteira Nobuck Tiny Bow Rústica Lady Pink" class="" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/h42/h13/h00/h00/8985720651806/1081600020003U-01-BASEIMAGE-Lores.jpg"
+                style="opacity: 1;">
+              <span class="product-title">Rasteira Nobuck Tiny Bow Rústica Lady Pink</span>
+              <span class="arz-product-price">R$199,90</span>
+              <a href="/sapatos/sandalias/sandalia-nobuck-no-blue-bird/p/0259800990001U" class="button-buy" tabindex="0">
+                <span>Comprar</span>
+              </a>
+            </div>
+            <div class="item">
+              <img class="product-image" id="product-0448503850002U" alt="Rasteira Nobuck Minimal Tango" class="" src="https://secure-static.arezzo.com.br/medias/sys_master/arezzo/h9a/h71/h00/h00/8986854621214/0448503850002U-01-BASEIMAGE-Lores.jpg"
+                style="opacity: 1;">
+              <span class="product-title">Rasteira Nobuck Minimal Tango</span>
+              <span class="product-price">R$159,90</span>
+              <a href="/sapatos/sandalias/sandalia-nobuck-no-blue-bird/p/0259800990001U" class="button-buy" tabindex="0">
+                <span>Comprar</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    <div class="banner-triplo">
+      <div class="box-banner"><a href="http://cwi.vtexcommercestable.com.br/"><img width="380" height="250" id="ihttp://cwi.vteximg.com.br/arquivos/ids/155454/ARZ-17-GARDEN-21SET-TRIPLO01.jpg" alt="banner-primeiro" src="http://cwi.vteximg.com.br/arquivos/ids/155454/ARZ-17-GARDEN-21SET-TRIPLO01.jpg" complete="complete"></a></div>
+      <div class="box-banner"><a href="http://cwi.vtexcommercestable.com.br/"><img width="380" height="250" id="ihttp://cwi.vteximg.com.br/arquivos/ids/155455/ARZ-17-GARDEN-21SET-TRIPLO3.jpg" alt="banner-segundo" src="http://cwi.vteximg.com.br/arquivos/ids/155455/ARZ-17-GARDEN-21SET-TRIPLO3.jpg" complete="complete"></a></div>
+      <div class="box-banner"><a href="http://cwi.vtexcommercestable.com.br/"><img width="380" height="250" id="ihttp://cwi.vteximg.com.br/arquivos/ids/155464/ARZ-17-GARDEN-2109-TRIPLO02.jpg" alt="banner-terceiro" src="http://cwi.vteximg.com.br/arquivos/ids/155464/ARZ-17-GARDEN-2109-TRIPLO02.jpg" complete="complete"></a></div>
+    </div>
+    <div class="banner-especial">
+      <div class="box-banner"><a href="http://cwi.vtexcommercestable.com.br/VtexTutorial"><img width="1180" height="454" id="ihttp://cwi.vteximg.com.br/arquivos/ids/155467/ARZ-17-GARDEN26SET-CATALOGO.jpg" alt="banner-especial" src="http://cwi.vteximg.com.br/arquivos/ids/155467/ARZ-17-GARDEN26SET-CATALOGO.jpg" complete="complete"></a></div>
+    </div>
+    <div class="banner-apps">
+      <div class="box-banner"><a href="http://cwi.vtexcommercestable.com.br/VtexTutorial"><img width="580" height="300" id="ihttp://cwi.vteximg.com.br/arquivos/ids/155466/ARZ-17-APP-26SET-580X300-A.jpg" alt="banner-android" src="http://cwi.vteximg.com.br/arquivos/ids/155466/ARZ-17-APP-26SET-580X300-A.jpg" complete="complete"></a></div>
+      <div class="box-banner"><a href="http://cwi.vtexcommercestable.com.br/VtexTutorial"><img width="580" height="300" id="ihttp://cwi.vteximg.com.br/arquivos/ids/155465/ARZ-17-APP-26SET-580X300-B.jpg" alt="banner-ios" src="http://cwi.vteximg.com.br/arquivos/ids/155465/ARZ-17-APP-26SET-580X300-B.jpg" complete="complete"></a></div>
+    </div>
+  </main>
+
+
+  <footer>
+    <div class="footer-top">
+      <div class="content">
+        <div class="email">
+          <div class="titulo">
+            <span>Fique por dentro das novidades</span>
+          </div>
+          <form action="">
+            <input type="text" placeholder="Inform seu Email" />
+            <button class="botao"><i class="simbolo"></i></button>
+          </form>
+        </div>
+        <div class="lojas">
+          <div class="titulo">
+            <span>Localizador de lojas</span>
+          </div>
+          <div>
+            <div class="botao">
+              <a href="">
+                    <span><strong>Encontre a loja mais próxima</strong></span>
+                    <span><i class="simbolo"></i></span>
+                  </a>
+            </div>
+          </div>
+        </div>
+        <div class="redes-sociais">
+          <div class="titulo">
+            <span>Arezzo nas redes sociais</span>
+          </div>
+          <div>
+            <ul class="botao">
+              <li class="facebook"><a href=""><i class="simbolo facebook"></i></a></li>
+              <li class="twitter"><a href=""><i class="simbolo twitter"></i></a></li>
+              <li class="instagram"><a href=""><i class="simbolo instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <ul class="content">
+        <li><a href="">Sobre a Arezzo</a></li>
+        <li><a href="">Mundo Arezzo</a></li>
+        <li><a href="">Atendimento</a></li>
+        <li><a href="">Termos e Políticas</a></li>
+        <li><a href="">Franquias e Multimarcas</a></li>
+        <li><a href="">RI Arezzo&Co</a></li>
+        <li><a href="">Carreira</a></li>
+      </ul>
+    </div>
+    <div class="copyright">
+      <div class="content">
+        © 0000 - 0000, Aaaaaa. Todos os direitos reservados.Zzzz Comércio de Calçados Ltda. | Rod Governador Mario Ccccc, 3255, Armz
+        01 Sala 210. Bairro Padre Mathias, Cariacica. ES CEP: 00000-000 | CNPJ: 00.000.000/0000-00 | Telefone: (00) 0000-0000
+      </div>
+    </div>
+  </footer>
+  <!-- seu codigo aqui -->
+
+
+
+  <!-- scripts carregados automaticamente -->
+  <!-- <script language="javascript" src="http://cwi.vteximg.com.br/Scripts/Track.js?v=1.4.825.1483"  type="text/javascript"></script> -->
+  <script language="javascript" src="http://cwi.vteximg.com.br/Scripts/thickbox.js?v=1.4.825.1483" type="text/javascript"></script>
+  <script language="javascript" src="http://cwi.vteximg.com.br/Scripts/json2.js?v=1.4.825.1483" type="text/javascript"></script>
+  <script language="javascript" src="http://cwi.vteximg.com.br/Scripts/vtex.viewPart.CallCenterDisclaimer.js?v=1.4.825.1483"
+    type="text/javascript"></script>
+  <script language="javascript" src="http://cwi.vteximg.com.br/Scripts/vtex.viewPart.ajaxLoader_V2.js?v=1.4.825.1483" type="text/javascript"></script>
+  <script language="javascript" src="http://cwi.vteximg.com.br/Scripts/vtex.commerce.batchbuy.js?v=1.4.825.1483" type="text/javascript"></script>
+  <script language="javascript" src="http://cwi.vteximg.com.br/Scripts/vtex.jsevents.js?v=1.4.825.1483" type="text/javascript"></script>
+  <script language="javascript" src="http://cwi.vteximg.com.br/Scripts/vtex.skuEvents.js?v=1.4.825.1483" type="text/javascript"></script>
+  <script language="javascript" src="http://cwi.vteximg.com.br/Scripts/vtex.skuEvents.skuDataFetcher.js?v=1.4.825.1483" type="text/javascript"></script>
+  <script language="javascript" src="http://cwi.vteximg.com.br/Scripts/jquery.livequery.min.js?v=1.4.825.1483" type="text/javascript"></script>
+  <script language="javascript" src="http://cwi.vteximg.com.br/Scripts/prettyPhoto/js/jquery.prettyPhoto.js?v=1.4.825.1483"
+    type="text/javascript"></script>
+  <script language="javascript" src="http://cwi.vteximg.com.br/Scripts/prettyPhoto/js/lean-prettyPhoto.js?v=1.4.825.1483" type="text/javascript"></script>
+  <script language="javascript" src="http://cwi.vteximg.com.br/Scripts/vtex.commerce.Compare.js?v=1.4.825.1483" type="text/javascript"></script>
+  <script language="javascript" src="http://cwi.vteximg.com.br/Scripts/mobile/vtex.make.mobile.pager.js?v=1.4.825.1483" type="text/javascript"></script>
+</body>
+
+<!-- commonScripts -->
+<!-- <vtex:template id="commonScripts" /> -->
+<script src="http://cwi.vteximg.com.br/arquivos/bootstrap.js?u=1"></script>
+<script src="http://cwi.vteximg.com.br/arquivos/pace.min.js"></script>
+<script src="http://cwi.vteximg.com.br/arquivos/owl.carousel.min.js"></script>
+<script src="http://cwi.vteximg.com.br/arquivos/menu-responsivo.js"></script>
+<script src="http://cwi.vteximg.com.br/arquivos/advanced-filter.js"></script>
+<script src="http://cwi.vteximg.com.br/arquivos/admake-mini-cart.js"></script>
+<script src="http://cwi.vteximg.com.br/arquivos/default.js"></script>
+
+<script src="../../arquivos/main.min.js" charset="utf-8"></script>
+
+</html>
