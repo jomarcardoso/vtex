@@ -7,9 +7,17 @@ $(document).ready(function () {
 //prateleira
 $(document).ready(function () {
 
-    // $('.owl').on('desktop', function() {
-    //     banner_carousel(5);
+    // $('.owl').on('smartphone-medium', function() {
+    //     banner_carousel(2);
     // })
+
+    // $('.owl').on('smartphone-small', function() {
+    //     banner_carousel(1);
+    // })
+
+    // function banner_carousel(nitems) {
+
+    // }
 
     // $('.owl').on('laptop', function() {
     //     banner_carousel(5);
@@ -23,18 +31,7 @@ $(document).ready(function () {
     //     banner_carousel(3);
     // })
 
-    // $('.owl').on('smartphone-medium', function() {
-    //     banner_carousel(2);
-    // })
-
-    // $('.owl').on('smartphone-small', function() {
-    //     banner_carousel(1);
-    // })
-
-    // function banner_carousel(nitems) {
-    //     $('.owl').owlCarousel({
-    //         loop:true,
-    //         margin:10,
+    //  margin:10,
     //         autoWidth:false,
     //         navigation:true,
     //         rewindNav:false,
@@ -49,8 +46,8 @@ $(document).ready(function () {
         autoWidth:false,
         navigation:true,
         rewindNav:false,
-        scrollPerPage : true,
-        items: 5,
+        scrollPerPage : false,
+        items: 5, 
         navigationText: ['<i class="fa fa-angle-left fa-3x" aria-hidden="true"></i>','<i class="fa fa-angle-right fa-3x" aria-hidden="true"></i>']
     })
 });
