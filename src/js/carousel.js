@@ -48,7 +48,14 @@ $(document).ready(function () {
         rewindNav:false,
         scrollPerPage : false,
         items: 5, 
-        navigationText: ['<i class="fa fa-angle-left fa-3x" aria-hidden="true"></i>','<i class="fa fa-angle-right fa-3x" aria-hidden="true"></i>']
+        navigationText: ['<i class="fa fa-angle-left fa-3x" aria-hidden="true"></i>','<i class="fa fa-angle-right fa-3x" aria-hidden="true"></i>'],
+        responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        }
+    }
     })
 });
 
