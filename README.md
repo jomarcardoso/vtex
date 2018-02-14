@@ -3,11 +3,10 @@
 Recriando site da Arezzo na plataforma VTEX. https://www.arezzo.com.br/
 
 # Inicio
-$ npm install
-$ npm start
-login: https://cwi.vtexcommercestable.com.br/admin/a/
-
-vtexlocal: http://cwi.vtexlocal.com.br/jomarloja
+ * npm install
+ * npm start
+ * login: https://cwi.vtexcommercestable.com.br/admin/a/
+ * vtexlocal: http://cwi.vtexlocal.com.br/jomarloja
 
 ## Pastas
  * templates
